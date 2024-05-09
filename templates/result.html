@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction Result</title>
+</head>
+<body>
+    <h1>Weather Prediction Result</h1>
+    <p>Predicted Weather Condition: {{ prediction }}</p>
+    {% if is_suitable %}
+        <p>The weather is suitable for outdoor activities!</p>
+    {% else %}
+        <p>The weather is not suitable for outdoor activities.</p>
+    {% endif %}
+    <p><a href="/">Back to Prediction</a></p>
+</body>
+</html>
